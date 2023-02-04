@@ -36,7 +36,7 @@
 #X floatatom 959 204 5 0 0 0 - - - 0;
 #X obj 965 78 loadbang;
 #X obj 997 483 s audio;
-#N canvas 15 77 1920 989 colourToEachLight 0;
+#N canvas 15 77 1920 989 colourToEachLight 1;
 #X obj 189 0 s r1;
 #X obj 237 1 s g1;
 #X obj 289 0 s b1;
@@ -170,6 +170,7 @@
 #X obj 1040 115 + 0;
 #X obj 1041 147 mavg 10;
 #X obj 784 174 change;
+#X msg 290 665 1 1 1;
 #X connect 3 0 0 0;
 #X connect 3 1 1 0;
 #X connect 3 2 2 0;
@@ -287,6 +288,7 @@
 #X connect 131 0 98 0;
 #X connect 131 0 101 0;
 #X connect 132 0 94 0;
+#X connect 133 0 106 0;
 #X restore 1495 736 pd colourToEachLight;
 #X text 174 68 This has the position of the light dependant on the volume.;
 #X obj 1509 787 sendToDMX;
